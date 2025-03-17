@@ -2,6 +2,7 @@
 If there exists such a pair,print the pair and If no such pair exists, Print "No such pair exists "*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void sort(int arr[], int n)
 {
@@ -38,7 +39,7 @@ int main()
         printf("%d ", arr[i]);
     }
     sort(arr, n);
-    printf("Enter the difference you want to check;\n");
+    printf("\nEnter the difference you want to check;\n");
     int key;
     scanf("%d", &key);
     for (int i = 0; i < n - 1; i++)
@@ -51,7 +52,7 @@ int main()
             }
             else if (arr[j] - arr[i] == key)
             {
-                printf("Yes the difference with %d is exists and the pair is %d and %d\n", key, arr[i], arr[j]);
+                printf("Yes the difference with %d exists and the pair is %d and %d\n", key, arr[i], arr[j]);
                 return 0;
             }
         }
