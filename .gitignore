@@ -1,0 +1,4 @@
+# Hey write script for ignoring .exe files
+*.exe
+*a.out
+# Ignore all files in the build directory
