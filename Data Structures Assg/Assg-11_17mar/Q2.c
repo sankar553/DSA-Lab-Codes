@@ -25,7 +25,7 @@ void sortByStart(int arr[][2], int n)
 
 void mergeIntervals(int arr[][2], int n)
 {
-    
+
     int i, j;
     int merged[n][2];
     int k = 0;
@@ -46,7 +46,7 @@ void mergeIntervals(int arr[][2], int n)
             }
         }
     }
-    
+
     printf("\n\n[ ");
     for (i = 0; i < k; i++)
     {
