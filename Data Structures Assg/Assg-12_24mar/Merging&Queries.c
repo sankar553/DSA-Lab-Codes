@@ -13,7 +13,22 @@ void merge(int arr[][2], int n, int *final, int *size)
     }
     *size = index;
 }
-
+/*
+#include <stdbool.h>
+void merge(int arr[][2], int n, int *final, int *size) {
+    int index = 0;
+    bool added[1000] = {false}; // Assuming a maximum of 1000 unique elements
+    for (int i = 0; i < n; i++) {
+        for (int j = arr[i][0]; j <= arr[i][1]; j++) {
+            if (!added[j]) { // Check if the number is already added
+                final[index++] = j;
+                added[j] = true; // Mark this number as added
+            }
+        }
+    }
+    *size = index; // Update the size of the final array
+}
+*/
 int main()
 {
     int n, q;
